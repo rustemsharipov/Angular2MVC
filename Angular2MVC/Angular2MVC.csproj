@@ -189,6 +189,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Components\manageuser.component.html" />
     <Content Include="app\Components\user.component.html" />
     <Content Include="App_Data\UserDB.mdf" />
     <Content Include="App_Data\UserDB_log.ldf">
@@ -276,6 +277,7 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
     <TypeScriptCompile Include="app\Components\home.component.ts" />
+    <TypeScriptCompile Include="app\Components\manageuser.component.ts" />
     <TypeScriptCompile Include="app\Components\user.component.ts" />
     <TypeScriptCompile Include="app\filter\user.pipe.ts" />
     <TypeScriptCompile Include="app\main.ts" />
