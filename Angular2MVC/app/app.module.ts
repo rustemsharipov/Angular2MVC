@@ -17,8 +17,11 @@ import { SearchComponent } from './Shared/search.component';
 
 import AppErrorHandler from './Shared/errorhandler';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule, MdNativeDateModule } from '@angular/material';
+
 @NgModule({
-    imports: [BrowserModule, ReactiveFormsModule, HttpModule, routing, Ng2Bs3ModalModule, FormsModule],
+    imports: [BrowserModule, ReactiveFormsModule, HttpModule, routing, Ng2Bs3ModalModule, FormsModule, BrowserAnimationsModule, MaterialModule, MdNativeDateModule],
     declarations: [AppComponent, UserComponent, HomeComponent, UserFilterPipe, SearchComponent],
     providers: [{ provide: ErrorHandler, useClass: AppErrorHandler }, { provide: APP_BASE_HREF, useValue: '/' }, UserService],
     bootstrap: [AppComponent]

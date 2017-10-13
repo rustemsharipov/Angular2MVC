@@ -21,7 +21,7 @@ var AppErrorHandler = (function (_super) {
     AppErrorHandler.prototype.handleError = function (error) {
         debugger;
         if (error.status == '401')
-            alert("You are not logged in, please log in and come back!");
+            alert("You are not logged in, please log in and come back.");
         else
             alert(error);
         _super.prototype.handleError.call(this, error);
