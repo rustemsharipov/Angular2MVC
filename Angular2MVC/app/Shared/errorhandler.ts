@@ -11,7 +11,7 @@ export default class AppErrorHandler extends ErrorHandler {
     handleError(error: any) {
         debugger;
         if (error.status == '401')
-            alert("You are not logged in, please log in and come back!")
+            alert("You are not logged in, please log in and come back.")
         else
             alert(error);
 
