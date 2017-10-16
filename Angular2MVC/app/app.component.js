@@ -27,7 +27,7 @@ var AppComponent = (function () {
             this.loading = true;
         }
         if (event instanceof router_1.NavigationEnd) {
-            setTimeout(function () { _this.loading = false; }, 1000);
+            setTimeout(function () { _this.loading = false; }, 100);
             // this.loading = false;
         }
         // Set loading state to false in both of the below events to hide the spinner in case a request fails

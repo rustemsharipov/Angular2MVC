@@ -17,6 +17,7 @@
           <Property Name="DOB" Type="nvarchar" MaxLength="250" />
           <Property Name="City" Type="nvarchar" MaxLength="250" />
           <Property Name="State" Type="nvarchar" MaxLength="250" />
+          <Property Name="Zip" Type="nvarchar" MaxLength="250" />
           <Property Name="Country" Type="nvarchar" MaxLength="250" />
         </EntityType>
         <EntityContainer Name="UserDBModelStoreContainer">
@@ -39,6 +40,7 @@
           <Property Name="City" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="State" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Country" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Zip" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="UserDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblUsers" EntityType="Self.TblUser" />
@@ -52,6 +54,7 @@
           <EntitySetMapping Name="TblUsers">
             <EntityTypeMapping TypeName="UserDBModel.TblUser">
               <MappingFragment StoreEntitySet="TblUser">
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
                 <ScalarProperty Name="Country" ColumnName="Country" />
                 <ScalarProperty Name="State" ColumnName="State" />
                 <ScalarProperty Name="City" ColumnName="City" />
